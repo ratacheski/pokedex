@@ -1,5 +1,5 @@
 <template>
-  <div class="grid grid-cols-12 gap-4">
+  <div class="grid grid-cols-12 gap-4 px-4">
     <CardPokemon
       v-for="(pokemon, index) in pokemons"
       :key="index"
@@ -40,7 +40,6 @@ export default {
         el = el.offsetParent
         top += el.offsetTop
       }
-
       return (
         top >= window.pageYOffset &&
         top + height <= window.pageYOffset + window.innerHeight
